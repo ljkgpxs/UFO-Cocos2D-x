@@ -78,7 +78,7 @@ bool ufoScence::init() {
 		pickupBody->setCategoryBitmask(0x02);
 		pickupBody->setCollisionBitmask(0x01);
 		pickupBody->setContactTestBitmask(0x02);
-		pickup->setPhysicsBody(pickupBody);
+		pickup->addComponent(pickupBody);
 		this->addChild(pickup);
 	}
 
